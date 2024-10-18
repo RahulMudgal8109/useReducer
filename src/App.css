@@ -1,0 +1,100 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.employee{
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid black;
+}
+
+.team::-webkit-scrollbar{
+  display: none;
+
+}
+.employee::-webkit-scrollbar {
+  display: none;
+}
+.employeeCardContainer{
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  height: 50px;
+  background-color: gray;
+  margin: 20px;
+  align-items: center;
+}
+.teamContainer{
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  height: 50px;
+  background-color: gray;
+  margin: 20px;
+  align-items: center;
+
+}
+.team {
+  position: relative; /* This creates a positioning context for the absolute child */
+  height: 300px;
+  overflow-y: scroll; /* Allow scrolling */
+  border: 1px solid black;
+}
+
+.averageAge {
+  position: sticky; /* This keeps it at the bottom of the team container */
+  bottom: 0; /* Align to the bottom */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width of the container */
+  height: 30px; /* Fixed height */
+  background-color: rgb(206, 205, 205);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px; /* Padding for aesthetics */
+  box-sizing: border-box; /* Include padding in width */
+  z-index: 1; /* Ensure it appears above other content */
+}
